@@ -1,0 +1,151 @@
+:root {
+    --Moderatecyan: hsl(176, 50%, 47%);
+    --Darkcyan: hsl(176, 72%, 28%);
+    --Black: hsl(0, 0%, 0%);
+    --Darkgray: hsl(0, 0%, 48%);
+}
+
+
+#header {
+    min-height: 60vh;
+    background-image: url(./images/image-hero-desktop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar-nav a{
+     color: white;
+    cursor: pointer;
+    /* box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5); */
+}
+
+.mark-btn{
+    align-items: center;
+    display: flex;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+#open-modal{
+    background-color: var(--Moderatecyan);
+    border: none;
+    padding: 15px 40px;
+    border-radius: 30px;
+    color: white;
+    outline: none;
+}
+#open-modal:hover{
+    background-color: var(--Darkcyan);  
+}
+
+#bookmark{
+    border: none;
+    border-radius: 30px;
+    border: none;
+    padding: 0px 20px;
+    border-radius: 30px;
+    color: white;
+    outline: none;
+}
+#bookmark:hover{
+    background-color: var(--Darkgray);
+    transition: 0.4s;
+}
+
+#bookmark img{
+   margin-right: 25px;
+}
+#text button{
+    border: none;
+    background-color: var(--Moderatecyan);
+    border-radius: 25px;
+    color: white;
+    transition: 0.4s;
+    padding: 15px 40px;
+   
+   
+}
+#text button:hover{
+    background-color: var(--Darkcyan);
+}
+#text-col button{
+    border: none;
+    background-color: rgb(210, 199, 199);
+    border-radius: 25px;
+    padding: 15px 40px;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+}
+#text-col button:hover{
+    background-color: var(--Darkgray);
+    transition: 0.4s;
+}
+
+@media only screen and (max-width: 768px) {
+    .mark-btn{
+        flex-direction: column;
+    }
+    
+
+    #open-modal{
+        background-color: var(--Moderatecyan);
+        border: none;
+        padding: 15px 40px;
+        border-radius: 30px;
+        margin-bottom: 20px;
+        color: white;
+        outline: none;
+    }
+    #bookmark{
+        border: none;
+        border-radius: 30px;
+        border: none;
+        padding: 0px 30px;
+        border-radius: 30px;
+        color: white;
+        outline: none;
+    }
+
+    .stats{
+        flex-direction: column;
+    }
+
+    .reward{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pledge{
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    #text button{
+        border: none;
+        background-color: var(--Moderatecyan);
+        border-radius: 25px;
+        color: white;
+        transition: 0.4s;
+        padding: 10px 20px;
+        width: 70%;
+        margin: auto;
+}
+   
+    #text-col button{
+        border: none;
+        background-color: rgb(210, 199, 199);
+        border-radius: 25px;
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: 0.4s;
+        width: 60%;
+        margin: auto;
+    }
+    
+    
+}
